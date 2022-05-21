@@ -8,6 +8,11 @@
   color: white;
   font-size:1.2em;
   font-weight: bold;
+
+  /* position: fixed; */
+  top: 0px;
+  z-index: 20;
+
 }
 .signin{
   border: none;

@@ -1,13 +1,28 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
+import CartPage from "./cartPage/CartPage";
 import Popup from "reactjs-popup";
 import styled from "styled-components";
+
 import { setUserLogin } from "../redux/auth/AuthSlice";
 import { auth, provider } from "../firebase";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
+import { addItemToCart } from "./cartPage/cart_helper";
 const SignInPopUp = () => {
   const dispatch = useDispatch();
   const history = useHistory();
+
+
+  const getaRedirect = () => {
+      return <Redirect to='/cart' />;
+  
+  };
+
+
+  // const openCart = () => {
+  //   window.open("https://www.google.com","_self")
+  // }  
 
   const signIn = () => {
     auth.signInWithPopup(provider).then((data) => {
@@ -26,7 +41,23 @@ const SignInPopUp = () => {
   return (
     <StyledPopup
       trigger={
-        <button className='signin button animate__heartBeat'> Sign In </button>
+        <div>
+          {/* <button className='signin button animate__heartBeat'> Sign In </button> */}
+        <img className='cartIcon' src="https://cdn.iconscout.com/icon/premium/png-256-thumb/shopping-cart-71-543136.png" height="30" width="35" 
+        //onClick={getaRedirect}></img>
+          //  onClick={openCart}
+          // onClick={<Route exact path='/cart'><CartPage /></Route>}
+           onClick={
+           <Router>
+             <Switch>
+               <Route exact path="/cart">
+                 <CartPage />
+               </Route>
+             </Switch>
+           </Router>
+           }></img>
+        </div>           
+          
       }
       modal
       closeOnDocumentClick

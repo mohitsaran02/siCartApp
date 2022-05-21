@@ -2,7 +2,7 @@ import React from 'react'
 import "./button.css"
 
 function Order(props) {
-  const { totalPrice, numberOfProducts } = props;
+  const { totalPrice, numberOfProducts, count, setCount } = props;
   const shipping = 50;
   return (
     <div>
@@ -22,7 +22,7 @@ function Order(props) {
           </div>
           <div className='sumMoh'>
             <span id='sumMoh'> Total Charges</span>
-            <span className='fsumMoh'>{totalPrice + 50}</span>
+            <span className='fsumMoh'>Rs.{totalPrice + 50}</span>
           </div>
         </div>
         <input type='checkbox' name='button' id='button'></input>

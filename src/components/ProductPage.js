@@ -3,9 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/productPage.css";
 import styled from "styled-components";
 import NavigationBar from "./NavigationBar";
+import './Popup.css';
 import { Redirect, useParams } from "react-router-dom";
 import Data from "../data/productData";
 import { addItemToCart } from "./cartPage/cart_helper";
+import PopUp from "./Popup";
 const data = {
   img: "https://images.unsplash.com/photo-1629473728190-c9a984fed794?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1864&q=80",
   title: "Pastel Jacket With Bejewelled Collar",
@@ -22,12 +24,13 @@ function ProductPage() {
       if (i.id == id) {
         data.img = i.imageUrl;
         data.title = i.name;
-        data.price = i.price * 70;
+        data.price = i.price * 10;
         data.description = i.description;
       }
     });
   });
-  const [redirect, setredirect] = useState(false);
+  const [popup, setPopup] = useState(false);
+
   const addItem = () => {
     addItemToCart(
       {
@@ -38,17 +41,33 @@ function ProductPage() {
         description: data.description,
         category: data.category,
       },
-      () => setredirect(true)
+      () => {
+        setPopup(true)
+        //{getPopUp}
+      }
     );
   };
-  const getaRedirect = () => {
-    if (redirect) {
-      return <Redirect to='/cart' />;
-    }
+  // const getaRedirect = () => {
+  //   if (redirect) {
+  //     return <Redirect to='/cart' />;
+  //   }
+  // };
+  const duringPopUp = popup ? " during-popup" : ""
+  {popup && <PopUp setPopup={setPopup}/>}
+  
+  const getPopUp = () => {
+    if (popup) {
+      return (
+        <div>
+        
+        <PopUp popup={popup}/>
+        </div>
+    )}
   };
   return (
     <>
-      {getaRedirect(redirect)}
+      {getPopUp(popup)}
+      <div className={"Checkout" + duringPopUp}>
       <NavigationBar></NavigationBar>
       <Container>
         <div className='d-lg-flex justify-content-center product-page'>
@@ -105,10 +124,12 @@ function ProductPage() {
           </div>
         </div>
       </Container>
+        </div>
     </>
   );
 }
 
+//export const setCounter;;
 export default ProductPage;
 const Container = styled.div`
   width: 90%;

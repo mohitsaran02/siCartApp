@@ -96,9 +96,23 @@ function NavigationBar() {
             </Nav>
             <Nav>
               {name && (
+
+        // <><button className='cartIcon'
+        //           // onClick={addItemToCart}
+        //           // onClick={<Route exact path='/cart'><CartPage /></Route>}
+        //           onClick={<Router>
+        //             <Switch>
+        //               <Route path="/cart">
+        //                 <CartPage />
+        //               </Route>
+        //             </Switch>
+        //           </Router>}
+        //         ><img className='cartIcon' src="https://cdn.iconscout.com/icon/premium/png-256-thumb/shopping-cart-71-543136.png" height="40" width="55" /> </button>
+                
                 <Link className='nav-link' to='/cart'>
-                  <a>Cart</a>
-                </Link>
+                    {/* <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/shopping-cart-71-543136.png" height="40" width="55" /> */}
+                    <a>Cart</a>
+                  </Link>
               )}
               {console.log(name + "photo AT line 93" + photo)}
               {name != "" ? (
@@ -117,7 +131,7 @@ function NavigationBar() {
                   </div>
                 </Popup>
               ) : (
-                <Nav.Link href='#cart'>
+                <Nav.Link href='cart'>
                   <SignInPopUp></SignInPopUp>
                 </Nav.Link>
               )}

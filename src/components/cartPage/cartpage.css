@@ -26,7 +26,6 @@ hr.line2Moh {
 
 .bagMoh {
   text-align: center;
-  position: relative;
   margin-top: 1rem;
   font-weight: bolder;
   font-size: 2.5rem;
@@ -53,9 +52,8 @@ hr.line2Moh {
 }
 
 .detailsMoh {
-  position: relative;
   margin-top: 2.5rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .gridMoh {
@@ -64,15 +62,15 @@ hr.line2Moh {
 }
 
 .tbl {
-  margin-left: 4.8rem;
+  margin-left: 4.5rem;
 }
 
 .descpMoh{
-  margin-left: 5.8rem;
+  margin-left: 5.1rem;
 }
 
 .quantityMoh, .priceMoh, .deleteMoh {
-  margin-left: 4rem;
+  margin-left: 4.4rem;
 }
 
 .summaryMoh {
@@ -101,28 +99,33 @@ hr.line2Moh {
   padding: 2px;
   margin-top: 1.2rem;
   margin-left: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
 }
   
 .itmdetMoh {
   display: flex;
   flex-direction: row;
-  margin-top: -1rem;
+  margin-top: -rem;
+  width: 60rem;
   margin-bottom: 0.7rem;
 }
 
 .dataMoh {
-  margin-top: 3rem;
-  margin-left: 3.2rem;
+  margin-top: 2rem;
+  margin-left: 2.5rem;
 }
 
 
 .itPriceMoh {
-  margin-left: 3.8rem;
+  position: absolute;
+  margin-top: -0.7rem;
+  margin-left: 17.2rem;
 }
 
 .quantMoh{
+  height: 10px;
   margin-left: 4.3rem;
+  margin-top: -1rem;
 }
 
 .mainChargesMoh {
@@ -136,37 +139,33 @@ hr.line2Moh {
 }
 
 .tmoneyMoh {
-  margin-left: 10rem;
+  margin-left: 14rem;
 }
 .smoneyMoh {
-  margin-left: 8rem;
+  margin-left: 7rem;
   margin-top: 1rem;
 }
 
-#plusMoh {
-  font-size: 2rem;
-  margin-left: 21rem;
-  margin-bottom: 1rem;
-}
+
 
 .sumMoh {
   margin-top: 1rem;
   padding: 1rem;
   padding-bottom: 2.7rem;
-  width: 19rem;
+  width: 23rem;
   height: 3rem;
-  margin-left: 5rem;
+  margin-left: 3rem;
   background-color: #5DA3FA;
   border-radius: 0.5rem;
 }
 
 .fsumMoh {
-  margin-left: 7.1rem;
+  margin-left: 8rem;
   
 }
 
 #sumMoh {
-  margin-left: -0.5rem;
+  margin-left: 1rem;
 }
 
 .checkoutMoh {
@@ -186,12 +185,15 @@ hr.line2Moh {
   cursor: pointer;
 }
 
-.qbtnMoh {
+/* .qbtnMoh {
   width: 1.2rem;
-  font-size: 15px;
+  font-size: 2px;
   font-weight: bolder;
   padding: 1px;
-}
+} */
+
+
+
 
 #decMoh {
   margin-right: 0.5rem;
@@ -201,16 +203,74 @@ hr.line2Moh {
 }
 
 #trashMoh{
-  margin-left: 3.5rem;
   position: absolute;
-  margin-top: -2px;
+  margin-top: -8.7rem;
+  margin-left: 39rem;
   color: red;
   padding-right: 0.5px;
-  width: 1.5rem;
-  font-size: 1.2rem;
+  width: 2rem;
+  font-size: 1.8rem;
   border-style: none;
   background-color: white;
+  cursor: pointer;
+}
+
+.plus{
+  font-weight: bolder;
+  margin: auto;
+  margin-left: 10px;
+  width: 25px;
+  cursor: pointer;
   
+}
+
+.qbt:hover{
+  background-color: rgb(209, 201, 201);
+}
+/* .minus:hover{
+  background-color: rgb(209, 201, 201);
+} */
+.minus{
+  font-weight: bolder;
+  margin: auto;
+  margin-right: 10px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.quantMoh{
+  margin-top: 2.7rem;
+  margin-left: 9.4rem;
+}
+
+.descMoh{
+  position: absolute;
+  margin-top: 2.7rem;
+}
+
+.qbt:active {
+  /* background-color: rgb(209, 201, 201); */
+  transform: translateY(4px);
+}
+
+
+#plusMoh{
+  margin-bottom: 17px;
+  margin-left: 21.5rem;
+}
+
+.empty{
+  margin: auto;
+  text-align: center;
+}
+
+.cartIcon{
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  position: absolute;
+  top: 15px;
+  right: 30px;
 }
 
 
