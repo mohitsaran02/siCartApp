@@ -4,11 +4,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://www.sicart.herokuapp.com">
+    <a href="https://sicart.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/Local-Ghosts/ecommerce-sicart">
+    <a href="https://github.com/mohitsaran02/siCartApp">
       Solution
     </a>
   </h3>
@@ -28,7 +28,7 @@
 
 ## Overview
 
-![screenshot](./public/screenshot.png)
+![screenshot](./public/screenshot.JPG)
 
 ### Built With
 
@@ -38,7 +38,6 @@
 - Bootstrap 
 - css
 - Redux toolkit
-- Firebase
 
 ## Features
 
@@ -46,11 +45,11 @@
 
 This application/site was created as a submission to a [Devsnest](https://www.devsnest.in/) challenge. The [challenge](https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY) was to build and ecommerce site with more than 50 products with a functional cart.
 
-- User signin signout 
+
 - adding product to the cart 
 - order checkout 
 - more than 50 products 
-- google auth
+
 
 ## Contact
 

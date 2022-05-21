@@ -44,9 +44,9 @@ const SignInPopUp = () => {
         <div>
           {/* <button className='signin button animate__heartBeat'> Sign In </button> */}
         <img className='cartIcon' src="https://cdn.iconscout.com/icon/premium/png-256-thumb/shopping-cart-71-543136.png" height="30" width="35" 
-        //onClick={getaRedirect}></img>
-          //  onClick={openCart}
-          // onClick={<Route exact path='/cart'><CartPage /></Route>}
+        onClick={getaRedirect}></img>
+           {/* onClick={openCart}
+          onClick={<Route exact path='/cart'><CartPage /></Route>}
            onClick={
            <Router>
              <Switch>
@@ -55,14 +55,16 @@ const SignInPopUp = () => {
                </Route>
              </Switch>
            </Router>
-           }></img>
+           }> */}
+             
+           {/* </img> */}
         </div>           
           
       }
-      modal
-      closeOnDocumentClick
+      // modal
+      // closeOnDocumentClick
     >
-      <div className='card'>
+      {/* <div className='card'>
         <div className='content'>welcome to Sicart</div>
         <button className='btn-rounded' onClick={signIn}>
           <div className='img1'>
@@ -71,7 +73,7 @@ const SignInPopUp = () => {
           </div>
           <div className='titles'>Sign In with Google</div>
         </button>
-      </div>
+      </div> */}
     </StyledPopup>
   );
 };
@@ -80,8 +82,10 @@ export default SignInPopUp;
 const StyledPopup = styled(Popup)`
   // use your custom style for ".popup-overlay"
   &-overlay {
-    /* ...; */
-    /* background-color: black; */
+    /* ...; 
+    display: none;*/
+    display: none;
+    /* background-color: transparent; */
   }
   // use your custom style for ".popup-content"
   &-content {
@@ -90,11 +94,14 @@ const StyledPopup = styled(Popup)`
     /* ...; */
     /* width: 100%; */
     padding: 5em;
+    display: none;
     .card {
+      display: none;
       width: 100%;
       margin: auto;
       padding: 3em;
       background-color: #cad5e2;
+      diplay: none;
     }
     .btn-rounded {
       display: flex;

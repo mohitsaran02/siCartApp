@@ -32,6 +32,7 @@
 /* popup css */
 .modal {
   font-size: 12px;
+  display: none;
 }
 .modal > .header {
   width: 100%;
