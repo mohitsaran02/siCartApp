@@ -14,7 +14,7 @@ function Slider() {
         <Carousel showThumbs={false} autoPlay autoFocus={true} infiniteLoop className="carousel">
         {images.map((image)=>
                 <div className="img1" key={image.id}>
-                    <img src={image.img}></img>
+                    <img src={image.img} alt="slider"></img>
                 </div>
            
         )}

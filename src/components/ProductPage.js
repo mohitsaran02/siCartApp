@@ -52,8 +52,8 @@ function ProductPage() {
   //     return <Redirect to='/cart' />;
   //   }
   // };
-  const duringPopUp = popup ? " during-popup" : ""
-  {popup && <PopUp setPopup={setPopup}/>}
+  // const duringPopUp = popup ? " during-popup" : ""
+  // {popup && <PopUp setPopup={setPopup}/>}
   
   const getPopUp = () => {
     if (popup) {
@@ -67,7 +67,7 @@ function ProductPage() {
   return (
     <>
       {getPopUp(popup)}
-      <div className={"Checkout" + duringPopUp}>
+      <div className={"Checkout"}>
       <NavigationBar></NavigationBar>
       <Container>
         <div className='d-lg-flex justify-content-center product-page'>

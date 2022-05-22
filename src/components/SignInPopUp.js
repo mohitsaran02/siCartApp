@@ -14,10 +14,10 @@ const SignInPopUp = () => {
   const history = useHistory();
 
 
-  const getaRedirect = () => {
-      return <Redirect to='/cart' />;
+  // const getaRedirect = () => {
+  //     return <Redirect to='/cart' />;
   
-  };
+  // };
 
 
   // const openCart = () => {
@@ -43,10 +43,10 @@ const SignInPopUp = () => {
       trigger={
         <div>
           {/* <button className='signin button animate__heartBeat'> Sign In </button> */}
-        <img className='cartIcon' src="https://cdn.iconscout.com/icon/premium/png-256-thumb/shopping-cart-71-543136.png" height="30" width="35" 
-        onClick={getaRedirect}></img>
-           {/* onClick={openCart}
-          onClick={<Route exact path='/cart'><CartPage /></Route>}
+        <img className='cartIcon' src="https://cdn.iconscout.com/icon/premium/png-256-thumb/shopping-cart-71-543136.png" alt="Cart Icon" height="30" width="35" 
+        // onClick={getaRedirect}></img>
+          // onClick={openCart}
+          // onClick={<Route exact path='/cart'><CartPage /></Route>}
            onClick={
            <Router>
              <Switch>
@@ -55,9 +55,9 @@ const SignInPopUp = () => {
                </Route>
              </Switch>
            </Router>
-           }> */}
+           }> 
              
-           {/* </img> */}
+           </img>
         </div>           
           
       }
