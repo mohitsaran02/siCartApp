@@ -31,7 +31,7 @@ const CartPage = () => {
       
       {products.length ? (
           <><h1 className='bagMoh'>Your Bag</h1><div className='containerMoh'>
-          <div className='pageMoh'>
+          <div className='pageMoh' style={{border: "8px solid black"}}>
             <div className='gridMoh'>
               <div className='detailsMoh'>
                 <span className='tbl productsMoh'>Products</span>

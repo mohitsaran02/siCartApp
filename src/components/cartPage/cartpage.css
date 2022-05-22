@@ -87,12 +87,31 @@ hr.line2Moh {
     flex-direction: column;
   }
 }
-@media only screen and (max-width: 900px) {
-  .detailsMoh {
-    display: flex;
-    flex-direction: column;
+@media only screen and (max-width: 1400px) {
+  .detailsMoh{
+
+    margin-left: 17rem;
    }
 }
+@media only screen and (max-width: 1400px) {
+  .summaryMoh{
+
+    margin-left: 25rem;
+   }
+}
+@media only screen and (max-width: 840px) {
+  .cartIcon{
+
+    margin-top: 3.5rem;
+    margin-right: -5px;
+   }
+}
+
+
+
+
+
+
 
 .imgMoh {
   border: 1px solid black;
